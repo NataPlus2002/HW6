@@ -10,7 +10,6 @@ int main() {
                         "tru|e@ma-il.ru JJ " //correct
                         "ex@-unwork.org";
     std::regex pattern (R"(\s[^.]([[:alnum:]!#$%&'*+-/=?^_`{|}~]+[.]?)*[^.]@([^-][[:alnum:]-]+.[[:alnum:]-]+[^-]))");
-    /*ëîêàëêà: ëþáûå áóêâû, öèôðû, ñèìâîëû; íà÷èíàòü è çàêàí÷èâàòü íå òî÷êîé, âíóòðè íå áîëåå îäíîé ê ðÿäó äîìåí: áóêâû, öèôðû, - (íå â êîíöå è íå â íà÷àëå)*/
     std::sregex_iterator begin(data.cbegin(), data.cend(), pattern);
     std::sregex_iterator end;
     std::for_each(begin, end, [](const std::smatch& m) {
