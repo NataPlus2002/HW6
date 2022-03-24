@@ -1,0 +1,9 @@
+{
+    "Addres": {
+        "City": "Mulino",
+        "Postcode": "606083",
+        "Street": "Gvardeyskaya"
+    },
+    "Name": "Natasha",
+    "Surname": "Plyuskova"
+}
