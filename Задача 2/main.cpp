@@ -1,9 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
-// Çàãîëîâî÷íûå ôàéëû äëÿ ôàéëîâîãî ââîäà-âûâîäà
 
-#include <conio.h>   //íåîáõîäèìî äëÿ getch()
+#include <conio.h> 
 
 using namespace std;
 
@@ -11,8 +10,6 @@ int main()
 {
     setlocale(LC_ALL,"Russian");
 
-/*ñîçäàåì îáúåêò F1, êîòîðûé ñîçäàñò ôàéë file.txt
-öèêëîì for çàïîëíåÿåì ôàéë èç ìàññèâà x[10]] */
     cout << "Êàêîé äëèíû áóäåò îäíà ñòðîêà â ôàéëå: ";
     int k = 0;
     cin >> k;
@@ -34,7 +31,7 @@ int main()
         file.seekg((n - 1) * (k + 2));
     else
         file.seekg(0);
-    char str[k]; // áóôåð äëÿ ÷òåíèÿ îäíîé ñòðîêè
+    char str[k]; 
     file.getline (str, k + 1);
     cout << "Ñòðîêà ¹" << n << ": " << str << endl;
     file.close();
